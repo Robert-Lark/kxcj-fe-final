@@ -1,28 +1,28 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import HomePage from './Home';
-import ListenNowPage from './ListenNow'
-import DonatePage from './Donate'
-import GetInvolvedPage from './GetInvolved';
-import BecomeADjPage from './BecomeADJ';
-import SubmitPSAPage from './SubmitPSA';
-import VolunteerPage from './Volunteer';
-import ShopPage from './Shop';
-import SupportersPage from './Supporters';
+import Home from './Home';
+import ListenNow from './ListenNow'
+import Donate from './Donate'
+import GetInvolved from './GetInvolved';
+import BecomeADj from './BecomeADJ';
+import SubmitPSA from './SubmitPSA';
+import Volunteer from './Volunteer';
+import Shop from './Shop';
+import Supporters from './Supporters';
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/listen-now" element={<ListenNowPage />} />
-        <Route path="/donate" element={<DonatePage />} />
-        <Route path="/get-involved" element={<GetInvolvedPage />} />
-        <Route path="/become-a-dj" element={<BecomeADjPage />} />
-        <Route path="/submit-psa" element={<SubmitPSAPage />} />
-        <Route path="/volunteer" element={<VolunteerPage />} />
-        <Route path="/shop" element={<ShopPage />} />
-        <Route path="/supporters" element={<SupportersPage />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/listennow" element={<ListenNow />} />
+        <Route path="/donate" element={<Donate />} />
+        <Route path="/get-involved" element={<GetInvolved />} />
+        <Route path="/become-a-dj" element={<BecomeADj />} />
+        <Route path="/submit-psa" element={<SubmitPSA />} />
+        <Route path="/volunteer" element={<Volunteer />} />
+        <Route path="/shop" element={<Shop />} />
+        <Route path="/supporters" element={<Supporters />} />
       </Routes>
     </Router>
   );

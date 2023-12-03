@@ -4,7 +4,7 @@ import React from 'react';
 
 const ListenNow = () => {
   return (
-    <Layout>
+    <Layout listenNow currentPage="/listenNow" cal>
       <h1>ListenNow</h1>
       {/* Add your home page content here */}
     </Layout>
