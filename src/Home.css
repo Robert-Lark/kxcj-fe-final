@@ -1,0 +1,62 @@
+.homePageContainer {
+  background: url("./images/HomePageBackground.jpg") no-repeat center center fixed; 
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+
+  @media (max-width: 600px) {
+    background-image:url("./images/HomePageBackground.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    padding: 0px;
+  }
+  
+}
+
+.logoContainer {
+  margin-bottom: 20px;
+}
+
+.logo{
+  width: 100vw;
+  max-width: 800px;
+}
+
+.linksContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width: 100%; 
+  @media (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+    margin-top: 25px;
+   }
+}
+
+#getInvolved {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.linkImage {
+  width: 20vw;
+  height: 25vh;
+  @media (max-width: 600px) {
+    width: 50vw;
+ margin-top: -25px;
+ margin-bottom: -25px;
+  }
+}
+
+#plank:hover {
+  transform: skewY(10deg);
+}
